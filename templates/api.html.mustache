@@ -1,0 +1,26 @@
+<div class="page-header">
+  <h1>API</h1>
+</div>
+
+<h2>General requirements</h2>
+<p>The API provides JSON-formatted data.</p>
+<p>All the API endpoints expect the <code>Accept</code> header to be set to <code>application/json</code>.</p>
+<p>The <code>Content-Type</code> header will be set to <code>application/json</code> in the responses.</p>
+
+<h2>Endpoints</h2>
+
+<dl class="dl-horizontal">
+
+  <dt><code>/dashboard</code></dt>
+  <dd>List hosts present in the store as well as the date and time of their last entry.</dd>
+
+  <dt><code>/hosts</code></dt>
+  <dd>List hosts present in the store</dd>
+
+  <dt><code>/hosts/{hostname}</code></dt>
+  <dd>List all backup dates for the given hostname</dd>
+
+  <dt><code>/hosts/{hostname}/dates/{date}</code></dt>
+  <dd>Show backup for a given date</dd>
+
+</dl>
